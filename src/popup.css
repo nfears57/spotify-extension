@@ -1,0 +1,31 @@
+/* public/popup.css */
+
+.popup {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .song-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .song-info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .details {
+    text-align: left;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  

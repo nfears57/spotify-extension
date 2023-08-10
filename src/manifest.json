@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "My Spotify Extension",
+  "version": "1.0",
+  "description": "A Chrome extension to display song information from Spotify.",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/Spotify_App_Logo.svg.png",
+    "48": "images/Spotify_App_Logo.svg.png",
+    "128": "images/Spotify_App_Logo.svg.png"
+  },  
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
